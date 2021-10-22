@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.js">
-    <title>MounsterCar</title>
+    <title>Document</title>
 </head>
 <style>
   html{
@@ -27,24 +26,37 @@
 
 <body>
   <div id="app">
-<h2>Control de Seguridad..</h2>
 
-    <form @submit.prevent="enviarMensaje">
+<h2>Control de Iluminacion</h2>
 
-      <p>Drive-MounsterCar:
-        <i class="fas fa-car-side" style="color: #094293">
-        <select v-model="car" style="width:100px; height:30px">
-          <option value = "w">Forward</option>
-          <option value = "s">Backward</option>
-          <option value = "d">Rigth</option>
-          <option value = "a">Left</option>
-          <option value = "q">Stop</option>       
+    <form @submit.prevent="enviarMensaje1">
+
+      <p>LED1:
+        <i class="far fa-lightbulb" style = "color: #FFC300">
+        <select v-model="LED1" style="width:100px; height:30px">
+          <option value = 0>OFF</option>
+          <option value = 1>ON</option>
         </select>
         <input type="submit" value="Enviar!">
         </i>
       </p>
 
     </form>
+
+  <form @submit.prevent="enviarMensaje2">
+
+    <p>LED2:
+      <i class="far fa-lightbulb" style = "color: #FFC300">
+        <select v-model="LED2" style="width:100px; height:30px">
+          <option value = 0>OFF</option>
+          <option value = 1>ON</option>
+        </select>
+        <input type="submit" value="Enviar!">
+      </i>
+
+</form>
+    
+
   </div>
 
 </body>
