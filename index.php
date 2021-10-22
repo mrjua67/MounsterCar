@@ -32,7 +32,7 @@
     <form @submit.prevent="enviarMensaje">
 
       <p>Drive-MounsterCar:
-        <i class="fas fa-car-side" style="color: #094293"></i>
+        <i class="fas fa-car-side" style="color: #094293">
         <select v-model="car" style="width:100px; height:30px">
           <option value = "w">Forward</option>
           <option value = "s">Backward</option>
