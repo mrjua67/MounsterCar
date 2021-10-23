@@ -27,7 +27,7 @@
 
 <body>
   <div id="app">
-<h2>Control de Seguridad..</h2>
+<h2>Control de Seguridad</h2>
 
     <form @submit.prevent="enviarMensaje">
 
