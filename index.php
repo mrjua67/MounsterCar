@@ -12,7 +12,6 @@
     font-family: Arial;
     display: inline-block;
     margin: 0px auto;
-    text-align: center;
   }
   h2{
     font-size: 3.0rem;
@@ -23,11 +22,12 @@
   i{
     font-size:3rem;
   }
+  #app{ margin:25% 2%;}
 </style>
 
 <body>
   <div id="app">
-<h2>Control de Seguridad</h2>
+<h2>Control de Seguridad..</h2>
 
     <form @submit.prevent="enviarMensaje">
 
