@@ -22,7 +22,10 @@
   i{
     font-size:3rem;
   }
-  #app{ margin:25% 2%;}
+  #app{ 
+    margin:25% 2%;
+    width:50%;
+  }
 </style>
 
 <body>
